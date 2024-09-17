@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Ultimate Reading Workflow: Syncing Kobo Highlights to Notion Automatically - mebibite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png">
+  <link rel="canonical" href="/article/syncing-kobo-highlights-to-notion-automatically/" />
+    
+    
+    <link rel="stylesheet" href="/css/style.min.a60cae57ce9d7227d833419db7df5e2b6fb0f1f0b71f2f56759f69b08b086bc8.css">
+    <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
+
+  
+    <meta name="description" content="I built free, open-source software that automatically transfers highlights and notes from a Kobo e-reader into Notion, saving time and eliminating manual effort. This tool works on macOS, Windows, and Linux, seamlessly creating a Notion page for each new entry to streamline organization."/>
+    <meta property="og:title" content="The Ultimate Reading Workflow: Syncing Kobo Highlights to Notion Automatically"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/article/syncing-kobo-highlights-to-notion-automatically/"/>
+    <meta property="og:image" content="/images/article/syncing-kobo-highlights-to-notion-automatically/kobo-libra-colour.jpg"/>
+    <meta property="og:description" content="I built free, open-source software that automatically transfers highlights and notes from a Kobo e-reader into Notion, saving time and eliminating manual effort. This tool works on macOS, Windows, and Linux, seamlessly creating a Notion page for each new entry to streamline organization."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@mebibite"/>
+    <meta name="twitter:creator" content="@mebibite"/>
+  
+
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+  
+
+  
+</head>
+
+
+
+
+<body class='page frame page-default-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-articles">
+                    <a href="/article/">articles</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-tags">
+                    <a href="/tags/">tags</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-whoami">
+                    <a href="/whoami/">whoami</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  &nbsp;
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-articles ">
+        <a href="/article/">
+          
+          <span>articles</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-tags ">
+        <a href="/tags/">
+          
+          <span>tags</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-whoami ">
+        <a href="/whoami/">
+          
+          <span>whoami</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>The Ultimate Reading Workflow: Syncing Kobo Highlights to Notion Automatically<span class="dot">.</span></h1>
+  
+  <img alt="Kobo Libra Colour" src="/images/article/syncing-kobo-highlights-to-notion-automatically/kobo-libra-colour.jpg" />
+  
+</div>
+
+<div class="content">
+  <p><i>Written by Tomas Beaujean, September 17, 2024</i></p>
+  <h2 id="the-dream-kobo-highlights-in-notion">The Dream: Kobo Highlights in Notion</h2>
+<p>As an active reader, my Kobo e-reader is always filled with highlights and notes from the books I’m immersed in. These notes capture key ideas I want to revisit and act on, making them essential to both my learning and creative process.</p>
+<p>I’ve also been a strong proponent of <a href="https://www.notion.so/" target="_blank">Notion</a> and <a href="https://www.kobo.com/us/en/ebook/the-para-method-2" target="_blank">Tiago Forte’s PARA method</a>, which I use to manage my projects, daily responsibilities, and track ideas, notes, and interests. This system has helped me stay focused and structured in capturing and executing ideas. I wanted to integrate my Kobo highlights and notes into Notion and use them in my PARA system.</p>
+<h2 id="the-problem-manually-transferring-highlights">The Problem: Manually Transferring Highlights</h2>
+<p>After finishing a book, I would spend time manually transferring my highlights and notes from Kobo into Notion. This process was tedious and time-consuming, and frankly, it felt like a waste of time. The more I read, the larger my backlog grew. I had all these insights, but they were trapped in my Kobo, waiting to be transferred.</p>
+<p>This bottleneck was frustrating, especially since I try to stay on top of my <a href="https://www.kobo.com/us/en/ebook/building-a-second-brain-2" target="_blank">second brain</a> (Tiago Forte’s term for organizing your ideas and information). I knew there had to be a better way to bridge the gap between my reading on Kobo and my organization in Notion.</p>
+<h2 id="the-solution-building-my-own-software">The Solution: Building My Own Software</h2>
+<p>I explored ways to pull my Kobo highlights and notes directly into Notion, bypassing manual work entirely. After finding no existing options that fit, I created a free and open-source tool: <a href="https://github.com/mebibite/kobo2notion/releases" target="_blank">kobo2notion</a>. This software, compatible with macOS, Windows, and Linux, automatically pulls your Kobo highlights and notes and creates a new Notion page for each entry, saving you from manual entry.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Simply connect your Kobo e-reader to your computer, the software will automatically detect any new highlights or notes you’ve made. For each new entry, a Notion page is created and placed within a section of your Notion space. I recommend placing these pages in your Inbox folder for easy sorting using the PARA method. This seamless workflow allows you to quickly organize and revisit your notes as they flow directly into Notion.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>For me, this wasn’t just about saving time; it was about creating a frictionless workflow for capturing and acting on ideas. By eliminating the tedious manual work, I can focus more on absorbing and applying the knowledge I gain from reading.</p>
+<p>The tool has been a game-changer in my own life, and I hope it helps others who, like me, want to make the most of their reading without getting bogged down by logistics. If you&rsquo;re interested, it&rsquo;s open-source and available for anyone to use or contribute to.</p>
+<h2 id="how-to-install">How to Install</h2>
+<p><a href="https://github.com/mebibite/kobo2notion/releases" target="_blank">Download kobo2notion</a> and follow the instructions in the <a href="https://github.com/mebibite/kobo2notion/blob/main/README.md" target="_blank">README file</a>.</p>
+
+  <h2>About the Author</h2>
+  <p>Tomas Beaujean, also known as mebibite or MiB, is an accomplished cybersecurity professional. His current work focuses on automating attack surface and vulnerability management, application security, penetration testing, and security leadership. For additional details, visit the <a href="/whoami/" target="_self">whoami</a> section of this website.</p>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/mebibite" title="github" target="_blank" rel="noopener">
+          <img src="/images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/tomasbeaujean/" title="linkedin" target="_blank" rel="noopener">
+          <img src="/images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+    <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+  
+
+  
+
+</body>
+</html>
