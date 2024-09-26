@@ -1,24 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
 <channel>
   <title>mebibite</title>
-  <link>/tags/productivity/</link>
+  <link>https://mebibite.me/tags/productivity/</link>
   <description>Recent content in  on mebibite</description>
   <generator>Hugo</generator>
   <language>en-us</language>
-  <lastBuildDate>Fri, 27 Sep 2024 00:53:00 CEST</lastBuildDate>
-  <atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Fri, 27 Sep 2024 01:13:18 +0200</lastBuildDate>
+  <atom:link href="https://mebibite.me/tags/productivity/index.xml" rel="self" type="application/rss+xml"/>
 
   
   <item>
     <title>The Ultimate Reading Workflow: Syncing Kobo Highlights to Notion</title>
-    <link>/article/syncing-kobo-highlights-to-notion/</link>
-    <pubDate>Tue, 17 Sep 2024 00:00:00 UTC</pubDate>
-    <guid>/article/syncing-kobo-highlights-to-notion/</guid>
+    <link>https://mebibite.me/article/syncing-kobo-highlights-to-notion/</link>
+    <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+    <guid>https://mebibite.me/article/syncing-kobo-highlights-to-notion/</guid>
     <description>I built free, open-source software that automatically transfers highlights and notes from a Kobo e-reader into Notion, saving time and eliminating manual effort. This tool works on macOS, Windows, and Linux, seamlessly creating a Notion page for each new entry to streamline organization.</description>
 
     
     
-    <media:thumbnail url="/images/article/syncing-kobo-highlights-to-notion/kobo-libra-colour.jpg" />
+    <media:thumbnail url="https://mebibite.me/images/article/syncing-kobo-highlights-to-notion/kobo-libra-colour.jpg" />
     
 
   </item>

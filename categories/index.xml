@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
 <channel>
   <title>mebibite</title>
-  <link>/categories/</link>
+  <link>https://mebibite.me/categories/</link>
   <description>Recent content in  on mebibite</description>
   <generator>Hugo</generator>
   <language>en-us</language>
-  <lastBuildDate>Fri, 27 Sep 2024 00:53:00 CEST</lastBuildDate>
-  <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Fri, 27 Sep 2024 01:13:18 +0200</lastBuildDate>
+  <atom:link href="https://mebibite.me/categories/index.xml" rel="self" type="application/rss+xml"/>
 
   
 </channel>
