@@ -1,11 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on mebibite</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on mebibite</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+  <title> - mebibite</title>
+  <link>/categories/</link>
+  <description>Recent content in  on mebibite</description>
+  <generator>Hugo</generator>
+  <language>en-us</language>
+  <lastBuildDate>Fri, 27 Sep 2024 00:46:00 CEST</lastBuildDate>
+  <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml"/>
+
+  
+</channel>
 </rss>
